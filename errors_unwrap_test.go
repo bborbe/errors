@@ -17,10 +17,7 @@ import (
 var _ = Describe("Unwrap", func() {
 	var err error
 	var result error
-	var banana error
-	BeforeEach(func() {
-		banana = stderrors.New("banana")
-	})
+
 	JustBeforeEach(func() {
 		result = liberrors.Unwrap(err)
 	})
@@ -34,26 +31,26 @@ var _ = Describe("Unwrap", func() {
 	})
 	Context("not wrapped", func() {
 		BeforeEach(func() {
-			err = banana
+			err = stderrors.New("banana")
 		})
 		It("returns correct error", func() {
-			Expect(result).To(Equal(banana))
+			Expect(result).To(Equal(stderrors.New("banana")))
 		})
 	})
 	Context("fmt wrapped", func() {
 		BeforeEach(func() {
-			err = fmt.Errorf("bla: %w", banana)
+			err = fmt.Errorf("bla: %w", stderrors.New("banana"))
 		})
 		It("returns correct error", func() {
-			Expect(result).To(Equal(banana))
+			Expect(result).To(Equal(stderrors.New("banana")))
 		})
 	})
 	Context("join wrapped", func() {
 		BeforeEach(func() {
-			err = stderrors.Join(banana)
+			err = stderrors.Join(stderrors.New("banana"))
 		})
 		It("returns correct error", func() {
-			Expect(result).To(Equal(banana))
+			Expect(result).To(Equal(stderrors.New("banana")))
 		})
 	})
 })
