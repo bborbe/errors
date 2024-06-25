@@ -12,6 +12,7 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 
 - refactor
 - errors.As unwrap error if not matching
+- go mod update
 
 ## v1.2.0
 
