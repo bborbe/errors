@@ -13,6 +13,10 @@ import (
 	"github.com/bborbe/errors"
 )
 
+type contextKey string
+
+const testKey contextKey = "data"
+
 var _ = Describe("DataContext", func() {
 	It("saves data into context", func() {
 		ctx := errors.AddToContext(context.Background(), "myKey", "myValue")
@@ -22,7 +26,7 @@ var _ = Describe("DataContext", func() {
 	})
 	It("data is not overwriteable", func() {
 		ctx := errors.AddToContext(context.Background(), "myKey", "myValue")
-		ctx = context.WithValue(ctx, "data", "banana")
+		ctx = context.WithValue(ctx, testKey, "banana")
 		data := errors.DataFromContext(ctx)
 		Expect(data).NotTo(BeNil())
 		Expect(data).To(HaveKeyWithValue("myKey", "myValue"))
