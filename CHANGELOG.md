@@ -8,6 +8,19 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.5.0
+
+**Breaking Changes:**
+- Change `HasData` interface from `map[string]string` to `map[string]any`
+- Change `AddDataToError` parameter type from `map[string]string` to `map[string]any`
+- Change `DataFromError` return type from `map[string]string` to `map[string]any`
+- Change `AddToContext` value parameter from `string` to `any`
+- Change `DataFromContext` return type from `map[string]string` to `map[string]any`
+
+**Features:**
+- Support rich error details including arrays, numbers, booleans, and nested objects
+- Enable JSON error handlers to return structured data instead of comma-separated strings
+
 ## v1.4.0
 
 - update go and deps

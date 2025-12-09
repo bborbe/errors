@@ -28,7 +28,7 @@ var _ = Describe("DataError", func() {
 			errors.New(context.Background(),
 				"banana",
 			),
-			map[string]string{
+			map[string]any{
 				"hello": "world",
 			},
 		)
@@ -44,7 +44,7 @@ var _ = Describe("DataError", func() {
 				errors.New(context.Background(),
 					"banana",
 				),
-				map[string]string{
+				map[string]any{
 					"hello": "world",
 				},
 			),
@@ -61,15 +61,57 @@ var _ = Describe("DataError", func() {
 				context.Background(),
 				"banana",
 			),
-			map[string]string{
+			map[string]any{
 				"hello": "world",
 			},
 		)
-		err = errors.AddDataToError(err, map[string]string{"hallo": "welt"})
+		err = errors.AddDataToError(err, map[string]any{"hallo": "welt"})
 		data := errors.DataFromError(err)
 		Expect(data).To(HaveLen(2))
 		Expect(data).To(HaveKeyWithValue("hello", "world"))
 		Expect(data).To(HaveKeyWithValue("hallo", "welt"))
 		Expect(err.Error()).To(Equal("banana"))
+	})
+	It("supports array values", func() {
+		err := errors.AddDataToError(
+			errors.New(context.Background(), "test"),
+			map[string]any{
+				"ids": []string{"a", "b", "c"},
+			},
+		)
+		data := errors.DataFromError(err)
+		ids, ok := data["ids"].([]string)
+		Expect(ok).To(BeTrue())
+		Expect(ids).To(Equal([]string{"a", "b", "c"}))
+	})
+	It("supports mixed type values", func() {
+		err := errors.AddDataToError(
+			errors.New(context.Background(), "test"),
+			map[string]any{
+				"field": "email",
+				"count": 5,
+				"valid": false,
+			},
+		)
+		data := errors.DataFromError(err)
+		Expect(data["field"]).To(Equal("email"))
+		Expect(data["count"]).To(Equal(5))
+		Expect(data["valid"]).To(Equal(false))
+	})
+	It("supports nested objects", func() {
+		err := errors.AddDataToError(
+			errors.New(context.Background(), "test"),
+			map[string]any{
+				"validation": map[string]any{
+					"field":  "email",
+					"reason": "invalid_format",
+				},
+			},
+		)
+		data := errors.DataFromError(err)
+		validation, ok := data["validation"].(map[string]any)
+		Expect(ok).To(BeTrue())
+		Expect(validation["field"]).To(Equal("email"))
+		Expect(validation["reason"]).To(Equal("invalid_format"))
 	})
 })
