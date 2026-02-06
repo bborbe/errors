@@ -2,24 +2,15 @@ name: Claude Code Review
 
 on:
   pull_request:
-    types: [opened, synchronize, labeled]
+    types: [opened, synchronize]
 
 jobs:
   claude-review:
-    # Two-stage pattern: Run for trusted users OR when label added
-    if: |
-      github.event.pull_request.user.login == 'bborbe' ||
-      github.event.pull_request.author_association == 'COLLABORATOR' ||
-      github.event.pull_request.author_association == 'MEMBER' ||
-      github.event.pull_request.author_association == 'OWNER' ||
-      contains(github.event.pull_request.labels.*.name, 'claude-review')
-    
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      pull-requests: read
-      issues: read
-      id-token: write
+      pull-requests: write
+      issues: write
     
     steps:
       - name: Checkout repository
@@ -31,7 +22,7 @@ jobs:
         id: claude-review
         uses: anthropics/claude-code-action@beta
         with:
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
 
           # Optional: Specify model (defaults to Claude Sonnet 4, uncomment for Claude Opus 4)
           # model: "claude-opus-4-20250514"
