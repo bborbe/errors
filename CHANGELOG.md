@@ -9,6 +9,13 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
+## v1.5.2
+
+- Update Go from 1.25.5 to 1.25.6
+- Update ginkgo/v2 from 2.27.5 to 2.28.1
+- Update gomega from 1.39.0 to 1.39.1
+- Update osv-scanner/v2 and related security dependencies
+
 ## v1.5.1
 
 - Update Go to 1.25.5
