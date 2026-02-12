@@ -9,6 +9,13 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
+## v1.5.3
+
+- Update Go version from 1.25.7 to 1.26.0
+- Update google/osv-scanner from v2.3.2 to v2.3.3
+- Update securego/gosec from v2.22.11 to v2.23.0
+- Update various indirect dependencies including anthropic-sdk-go, openai-go, and golang.org/x/* packages
+
 ## v1.5.2
 
 - Update Go from 1.25.5 to 1.25.6
