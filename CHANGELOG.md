@@ -9,6 +9,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
+## v1.5.4
+
+- go mod update
+
 ## v1.5.3
 
 - Update Go version from 1.25.7 to 1.26.0
