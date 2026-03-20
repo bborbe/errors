@@ -9,6 +9,11 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
+## v1.5.5
+
+- upgrade golangci-lint from v1 to v2
+- update vulnerable deps (go-sdk, grpc)
+
 ## v1.5.4
 
 - go mod update
