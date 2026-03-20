@@ -1,5 +1,10 @@
 ---
-status: created
+status: executing
+container: errors-001-fix-tests-and-dod
+dark-factory-version: v0.59.5-dirty
+created: "2026-03-20T12:58:05Z"
+queued: "2026-03-20T12:58:05Z"
+started: "2026-03-20T13:56:42Z"
 ---
 
 <summary>

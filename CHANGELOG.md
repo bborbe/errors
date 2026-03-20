@@ -9,6 +9,11 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
+## v1.5.6
+
+- standardize Makefile: add mocks mkdir, reorder lint, multiline trivy, add .PHONY declarations
+- setup dark-factory config
+
 ## v1.5.5
 
 - upgrade golangci-lint from v1 to v2
