@@ -9,6 +9,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
+## v1.5.7
+
+- chore: verify project health — all tests pass, linting clean, precommit succeeds
+
 ## v1.5.6
 
 - standardize Makefile: add mocks mkdir, reorder lint, multiline trivy, add .PHONY declarations
