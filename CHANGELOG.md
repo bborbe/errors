@@ -9,6 +9,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
+## v1.5.8
+
+- fix incompatible charmbracelet/x/cellbuf dependency version
+
 ## v1.5.7
 
 - chore: verify project health — all tests pass, linting clean, precommit succeeds
