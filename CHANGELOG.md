@@ -9,6 +9,13 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
+## v1.5.9
+
+- Update indirect dependencies (docker, containerd, prometheus, opentelemetry)
+- Add replace directives for charmbracelet/x/cellbuf, denis-tingaikin/go-header, opencontainers/runtime-spec
+- Bump moby/buildkit v0.23.2 → v0.29.0, docker/docker v28.3.3 → v28.5.2
+- Update go-git, klauspost/compress, prometheus stack
+
 ## v1.5.8
 
 - fix incompatible charmbracelet/x/cellbuf dependency version
