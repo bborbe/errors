@@ -9,6 +9,14 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
+## v1.5.10
+
+- bump go 1.26.1 → 1.26.2
+- upgrade golangci-lint v2.11.3 → v2.11.4
+- upgrade osv-scanner v2.3.4 → v2.3.5
+- upgrade counterfeiter v6.12.1 → v6.12.2, go-modtool v0.6.0 → v0.7.1
+- add OSV vulnerability ignores for bbolt and aws-sdk-go-v2
+
 ## v1.5.9
 
 - Update indirect dependencies (docker, containerd, prometheus, opentelemetry)
