@@ -9,6 +9,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
+## v1.5.12
+
+- Remove replace directives for charmbracelet/x/cellbuf, denis-tingaikin/go-header, diskfs/go-diskfs, nunnatsa/ginkgolinter
+
 ## v1.5.11
 
 - Bump ginkgo/v2 to v2.28.3 and gomega to v1.40.0
