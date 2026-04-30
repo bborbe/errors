@@ -9,6 +9,13 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
+## v1.5.11
+
+- Bump ginkgo/v2 to v2.28.3 and gomega to v1.40.0
+- Update golang.org/x/{mod,net,sys,text,tools} dependencies
+- Remove tools.go dev tool imports file
+- Clean up go.mod by removing dev tool dependencies
+
 ## v1.5.10
 
 - bump go 1.26.1 → 1.26.2
