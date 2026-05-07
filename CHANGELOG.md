@@ -9,6 +9,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
+## v1.5.13
+
+- bump Go version to 1.26.3
+
 ## v1.5.12
 
 - Remove replace directives for charmbracelet/x/cellbuf, denis-tingaikin/go-header, diskfs/go-diskfs, nunnatsa/ginkgolinter
