@@ -9,6 +9,14 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
+## v1.5.14
+
+- bump go 1.26.3 → 1.26.4
+- bump ginkgo v2.28.3 → v2.29.0, gomega v1.40.0 → v1.41.0
+- bump golang.org/x/net, x/sys, x/text for vuln fixes
+- drop errcheck + gosec; improve vulncheck output formatting
+- add .maintainer.yaml for autoRelease/autoApprove
+
 ## v1.5.13
 
 - bump Go version to 1.26.3

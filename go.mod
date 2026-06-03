@@ -1,10 +1,10 @@
 module github.com/bborbe/errors
 
-go 1.26.3
+go 1.26.4
 
 require (
-	github.com/onsi/ginkgo/v2 v2.28.3
-	github.com/onsi/gomega v1.40.0
+	github.com/onsi/ginkgo/v2 v2.29.0
+	github.com/onsi/gomega v1.41.0
 	github.com/pkg/errors v0.9.1
 )
 
@@ -26,4 +26,8 @@ require (
 	golang.org/x/tools v0.44.0 // indirect
 	google.golang.org/protobuf v1.36.11 // indirect
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
+)
+
+exclude (
+	cloud.google.com/go v0.26.0
 )
