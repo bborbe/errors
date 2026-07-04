@@ -9,6 +9,11 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
+## v1.5.15
+
+- bump ginkgo/gomega test deps
+- bump golang.org/x/mod, x/net, x/sync, x/sys, x/text, x/tools
+
 ## v1.5.14
 
 - bump go 1.26.3 → 1.26.4
