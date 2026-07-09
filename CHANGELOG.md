@@ -9,6 +9,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
+## v1.5.16
+
+- Bump Go toolchain to 1.26.5
+
 ## v1.5.15
 
 - bump ginkgo/gomega test deps
