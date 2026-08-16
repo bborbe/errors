@@ -9,6 +9,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
+## Unreleased
+
+- chore: opt into `goUpdate.autoUpdate` in `.maintainer.yaml` so github-update-go-watcher may file Go-version update tasks for this repo
+
 ## v1.5.17
 
 - Bump `golang.org/x/text` to v0.39.0 (CVE-2026-56852)
