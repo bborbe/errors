@@ -11,6 +11,8 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+- chore(security): bump Go 1.26.5 -> 1.26.6 (stdlib GO-2026-5026 / GO-2026-5972 / GO-2026-6090)
+
 - chore: opt into `goUpdate.autoUpdate` in `.maintainer.yaml` so github-update-go-watcher may file Go-version update tasks for this repo
 
 ## v1.5.17
