@@ -15,6 +15,8 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 
 - chore: opt into `goUpdate.autoUpdate` in `.maintainer.yaml` so github-update-go-watcher may file Go-version update tasks for this repo
 
+- chore(security): bump `golang.org/x/mod` v0.37.0 -> v0.40.0 (GO-2026-6179 / GO-2026-6180, CVE-2026-56864 / CVE-2026-56865)
+
 ## v1.5.17
 
 - Bump `golang.org/x/text` to v0.39.0 (CVE-2026-56852)
