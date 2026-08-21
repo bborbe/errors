@@ -9,7 +9,7 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
-## Unreleased
+## v1.5.20
 
 - chore: Run gofmt last in `format` target so golines wrapping is normalized before the gofmt lint check
 - chore: Bump golangci-lint to v2.13.1 and errcheck to v1.20.0 for Go 1.27 toolchain compatibility
