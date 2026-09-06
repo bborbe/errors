@@ -9,6 +9,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
+## Unreleased
+
+- chore: update Go to 1.27.1
+
 ## v1.6.0
 
 - feat: opt into `autoMerge.trivial` for mechanically-trivial update PRs
