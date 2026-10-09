@@ -9,6 +9,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
+## Unreleased
+
+- chore: update Go to 1.27.2
+
 ## v1.6.1
 
 - chore: update Go to 1.27.1
