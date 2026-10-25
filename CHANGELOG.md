@@ -9,7 +9,7 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
-## Unreleased
+## v1.6.5
 
 - chore: update github.com/onsi/ginkgo/v2 to v2.33.1, github.com/onsi/gomega to v1.44.0
 
