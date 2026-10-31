@@ -9,7 +9,7 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
-## Unreleased
+## v1.6.6
 
 - chore: bump golang.org/x/net to v0.62.0 (CVE-2026-97045)
 
