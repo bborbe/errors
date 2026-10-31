@@ -9,6 +9,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
+## Unreleased
+
+- chore: bump golang.org/x/net to v0.62.0 (CVE-2026-97045)
+
 ## v1.6.5
 
 - chore: update github.com/onsi/ginkgo/v2 to v2.33.1, github.com/onsi/gomega to v1.44.0
