@@ -9,7 +9,7 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 
-## Unreleased
+## v1.7.0
 
 - feat: add a `check-task-link` gate that fails a PR whose body carries no `Task: <task_identifier>` line, and install a pinned, checksum-verified Trivy release so `test` stops failing on the retired keyring helper
 
